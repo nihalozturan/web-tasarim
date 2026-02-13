@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table,th,td{
+          border:1px solid blue;
+      }
+      table{
+          width: 50%;
+      }
+  </style>
+</head>
+<body>
+    <h2>Öðrenci Notlarý</h2>
+    <table>
+        <tr>
+            <th>Adý</th>
+            <th>Soyadý</th>
+            <th>Notu</th>
+            <th>Harf Notu</th>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table,th,td{
+          border:1px solid blue;
+      }
+      table{
+          width: 50%;
+          border-collapse: collapse;
+      }
+      th{
+          height: 50px;
+      }
+      td{   
+          height: 30px;
+      }
+  </style>
+</head>
+<body>
+    <h2>Öðrenci Notlarý</h2>
+    <table>
+        <tr>
+            <th>Adý</th>
+            <th>Soyadý</th>
+            <th>Notu</th>
+            <th>Harf Notu</th>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table,th,td{
+        border:1px solid blue;
+      }
+      table{
+        width: 50%;
+        border-collapse: collapse;
+        border-spacing: 10px;
+      }
+      th{
+        height: 50px;
+        
+      }
+      td{   
+       height: 30px;
+       padding:5px;
+       text-align: center;
+      }
+  </style>
+</head>
+<body>
+    <h2>Öðrenci Notlarý</h2>
+    <table>
+        <tr>
+            <th>Adý</th>
+            <th>Soyadý</th>
+            <th>Notu</th>
+            <th>Harf Notu</th>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table,th,td{
+        border:1px solid blue;
+      }
+      table{
+        width: 50%;
+        border-spacing: 10px;
+        border:1px solid purple;
+      }
+      th{
+        height: 50px;
+        
+      }
+      td{   
+       height: 30px;
+       padding:5px;
+       text-align: center;
+      }
+  </style>
+</head>
+<body>
+    <h2>Öðrenci Notlarý</h2>
+    <table>
+        <tr>
+            <th>Adý</th>
+            <th>Soyadý</th>
+            <th>Notu</th>
+            <th>Harf Notu</th>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table,th,td{
+        border:1px solid blue;
+      }
+      table{
+        width: 50%;
+        border-spacing: 10px;
+        border-collapse: collapse;
+ 
+      }
+      th{
+        height: 50px;
+        
+      }
+      td{   
+       height: 30px;
+       padding:5px;
+       text-align: center;
+      }
+      table#t01{
+          background-color: chartreuse;
+      }
+  </style>
+</head>
+<body>
+    <h2>Öðrenci Notlarý</h2>
+    <table>
+        <tr>
+            <th>Adý</th>
+            <th>Soyadý</th>
+            <th>Notu</th>
+            <th>Harf Notu</th>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+    </table>
+
+
+    <h2>Öðrenci Sýnavlarý</h2>
+    <table id="t01">
+        <tr>
+            <th>Adý</th>
+            <th>Soyadý</th>
+            <th>Notu</th>
+            <th>Harf Notu</th>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table,th,td{
+        border:1px solid blue;
+      }
+      table{
+        width: 50%;
+        border-spacing: 10px;
+        border-collapse: collapse;
+ 
+      }
+      th{
+        height: 50px;
+        
+      }
+      td{   
+       height: 30px;
+       padding:5px;
+       text-align: center;
+      }
+      table#t01 tr:nth-child(odd){
+          background-color: coral;
+      }
+      table#t01 tr :nth-child(even){
+          background-color: chartreuse;
+      }
+  </style>
+</head>
+<body>
+    <h2>Öðrenci Sýnavlarý</h2>
+    <table id="t01">
+        <tr>
+            <th>Adý</th>
+            <th>Soyadý</th>
+            <th>Notu</th>
+            <th>Harf Notu</th>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+       <tr>
+        <td>Rüzgar</td>
+        <td>Çelik</td>
+        <td>90</td>
+        <td>BA</td>
+       </tr>
+       <th>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid blue;
+        }
+
+        table {
+            width: 50%;
+            border-spacing: 10px;
+            border-collapse: collapse;
+
+        }
+
+        th {
+            height: 50px;
+            color: brown;
+            font-weight: bold;
+            text-align: left;
+            font-size: 16px;
+
+        }
+
+        td {
+            height: 20px;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: coral;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h2>Öðrenci Sýnavlarý</h2>
+    <table id="t01">
+        <tr>
+            <th>Adý</th>
+            <th>Soyadý</th>
+            <th>Notu</th>
+            <th>Harf Notu</th>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Kaya</td>
+            <td>100</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+        <tr>
+        <td>Deniz</td>
+        <td>Kaya</td>
+        <td>100</td>
+        <td>AA</td>
+        </tr>
+        <tr>
+            <td>Rüzgar</td>
+            <td>Çelik</td>
+            <td>90</td>
+            <td>BA</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table{
+          border-collapse:  collapse;
+          width: 75%;
+      }
+      th,td{
+          border:  1px dashed blue;
+      }
+  </style>
+
+
+</head>
+<body>
+  <h2>Ýletiþim Bilgileri</h2> 
+    <table>
+    <tr>
+        <th>Ad</th>
+        <th>Cep tel</th>
+        <th>Ev Tel</th>
+    </tr>
+    <tr>
+        <th>Rüzgar</th>
+        <th>0555 555 55 55</th>
+        <th>0212 555 55 55</th>
+    </tr>
+    <tr>
+        <th>Deniz</th>
+        <th>0444 444 44 44</th>
+        <th>0212 444 44 44</th>
+    </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table{
+          border-collapse:  collapse;
+          width: 75%;
+      }
+      th,td{
+          border:  1px dashed blue;
+      }
+  </style>
+
+
+</head>
+<body>
+  <h2>Ýletiþim Bilgileri</h2> 
+    <table>
+    <tr>
+        <th>Ad</th>
+        <th colspan="2">Tel</th>
+        
+    </tr>
+    <tr>
+        <th>Rüzgar</th>
+        <th>0555 555 55 55</th>
+        <th>0212 555 55 55</th>
+    </tr>
+    <tr>
+        <th>Deniz</th>
+        <th>0444 444 44 44</th>
+        <th>0212 444 44 44</th>
+    </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table{
+          border-collapse:  collapse;
+          width: 75%;
+      }
+      th,td{
+          border:  1px dashed blue;
+      }
+  </style>
+
+
+</head>
+<body>
+  <h2>Ýletiþim Bilgileri</h2> 
+    <table>
+ <tr>
+     <th>Adý Soyadý</th>
+     <td>Rüzgar Kaya</td>
+ </tr>
+ <tr>
+     <th>Telefon Numarasý</th>
+     <td>0212 555 55 55</td>
+ </tr>
+ <tr>
+     <th> Cep Numarasý</th>
+     <td>0555 555 55 55</td>
+ </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      table{
+          border-collapse:  collapse;
+          width: 75%;
+      }
+      th,td{
+          border:  1px dashed blue;
+      }
+  </style>
+
+
+</head>
+<body>
+  <h2>Ýletiþim Bilgileri</h2> 
+    <table>
+ <tr>
+     <th>Adý Soyadý</th>
+     <td>Rüzgar Kaya</td>
+ </tr>
+ <tr>
+     <th rowspan="2">Telefon Numarasý</th>
+     <td>0212 555 55 55</td>
+ </tr>
+ <tr>
+  
+     <td>0555 555 55 55</td>
+ </tr>
+    </table>
+</body>
+</html>
