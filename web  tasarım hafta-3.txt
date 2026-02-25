@@ -1,0 +1,541 @@
+//post yazýlýrsa biligler gizli, get yazýlýrsa açýk.
+//submit ile buton yapýldý
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  
+</head>
+<body>
+  <form action="giris.html" method="get"> 
+   Ad: <input type="text" name="ad">
+   Soyad: <input type="text" name="soyad">
+   <input type="submit" value="Gönder"> 
+  </form>  
+</body>
+</html>
+
+
+************************************************************************************
+
+<!DOCTYPE html> //required ile alaný doldurma mecburyeti getirildi. maxlength ile karakter kýsýtý getirildi.
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="get">
+        Ad: <input type="text" name="ad" required maxlength="5"> 
+        Soyad: <input type="text" name="soyad">
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+
+*****************************************************************************
+
+
+<!DOCTYPE html> //placeholder ile kutucuða açýklama eklendi
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="get">
+        Ad: <input type="text" name="ad" placeholder="adýnýzý giriniz"> 
+        Soyad: <input type="text" name="soyad">
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+
+
+*****************************************************************************
+
+<!DOCTYPE html> // readonly: input girilemez
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="get">
+        Ad: <input type="text" name="ad" readonly> 
+        Soyad: <input type="text" name="soyad">
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+
+***********************************************************************
+
+<!DOCTYPE html> //ad kutucuðu 'Rüzgar' yazýsý ile gelir. Ýnput girilemez.
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="get">
+        Ad: <input type="text" name="ad" readonly value="rüzgar">
+        Soyad: <input type="text" name="soyad">
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+*****************************************************************************
+
+<!DOCTYPE html> //kutucuk boyutu ayarlama
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="get">
+        Ad: <input type="text" name="ad" size="50"> 
+        Soyad: <input type="text" name="soyad">
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+
+
+*************************************************************************
+
+<!DOCTYPE html>  //sifre tanýmlama
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="post">
+       Þifre: <input type="password" name="sifre">
+       <br>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+
+
+***********************************************************************
+
+<!DOCTYPE html> //eposta olarak tanýmladýk @ olmadan ilerlenmiyor
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="post">
+      ePosta: <input type="email" name="eposta"> 
+       <br>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+
+
+
+
+***************************************************************
+<!DOCTYPE html> //checkbox oluþturma
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="post">
+   <input type="checkbox"name="arac1"> Bisiklet
+   <input type="checkbox"name="arac2"> Skoter
+   <input type="checkbox"name="arac3"> Taksi
+       <br>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+
+
+****************************************************************
+<!DOCTYPE html> // required: seçmeden ilerleyemiyorsun // checked:seçili gelir
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="get">
+   <input type="checkbox"name="arac1" required> Bisiklet  
+   <input type="checkbox"name="arac2" checked> Skoter 
+   <input type="checkbox"name="arac3"> Taksi
+       <br>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+
+
+
+***************************************************************
+
+<!DOCTYPE html> //radio düðmeleri ile seçim
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form action="giris.html" method="get">  
+        Cinsiyetiniz:
+        <input type="radio" name="cinsiyet" value="erkek"> erkek
+        <input type="radio" name="cinsiyet" value="kadýn"> kadýn
+        <br>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+*******************************************************************
+<!DOCTYPE html> // formaction:form verilerini sunucuya gönderir
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+        Cinsiyetiniz:
+        <input type="radio" name="cinsiyet" value="erkek"> erkek
+        <input type="radio" name="cinsiyet" value="kadýn"> kadýn
+        <br>
+        <input type="submit" value="Gönder" formaction="giris.html"> 
+    </form>
+</body>
+
+</html>
+
+*******************************************************************
+
+<!DOCTYPE html> //resim ile yönlendirildi, boyut ayarý yapýldý
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+        Cinsiyetiniz:
+        <input type="radio" name="cinsiyet" value="erkek"> erkek
+        <input type="radio" name="cinsiyet" value="kadýn"> kadýn
+        <br>
+        <input type="image" src="img_submit.gif" width="30" height="30"> 
+    </form>
+</body>
+
+</html>
+**************************************************************
+<!DOCTYPE html> //sýfýrla etiketi
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+      Kullanýcý adý: <input type="text"> <br>
+      Þifre: <input type="password"> <br>
+      <input type="submit" value="Gönder">
+      <input type="reset" value="Sýfýrla"> 
+    </form>
+</body>
+
+</html>
+*****************************************************************
+<!DOCTYPE html> //Telefon alaný oluþturma
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+      Telefon: <input type="Tel" name="Telefon" placeholder="05XX XXX XX XX"> <br>
+      <input type="submit" value="Gönder">
+      <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+</html>
+
+******************************************************
+
+
+<!DOCTYPE html> //tarih seçimi
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+    Doðum Tarihiniz: <input type="date" name=" tarih">
+      <input type="submit" value="Gönder">
+      <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+</html>
+
+*********************************************************
+<!DOCTYPE html> //yýl aralýðýna göre tarih seçimi
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+    Doðum Tarihiniz: <input type="date" name=" tarih" min="2000-01-01" max="2010-01-01">
+      <input type="submit" value="Gönder">
+      <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+</html>
+
+*******************************************************
+
+<!DOCTYPE html>  //göndere týklandýðýnda pop up mesajý verir.
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+    Doðum Tarihiniz: <input type="date" name=" tarih" min="2000-01-01" max="2010-01-01">
+      <input type="submit" value="Gönder" onclick= "alert('Merhaba')">
+      <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+</html>
+
+**************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+        Resim yükleyiniz: <input type="file">
+        <br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+***********************************************************
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+      Tuttuðunuz Takým: <input type="text"><br>
+<input type="hidden" name="ulke" value="Türkiye">
+<br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+</html>
+
+*********************************************************
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+ Renk seçiniz: <input type="color" name="renk">
+ <br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+</html>
+**************************************************************
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+Sayý Seçiniz: <input type="number" name="sayý">
+ <br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+</html>
+*******************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+Sayý Seçiniz: <input type="number" name="sayý" min="10" max="20" step="2">
+ <br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sýfýrla">
+    </form>
+</body>
+
+</html>
+**********************************************************
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+        Sayý Seçiniz: <input type="number" name="sayý" min="10" max="20" step="2">
+        <br>
+        <button type="submit">Gönder</button>
+        <button type="reset"> Sýfýrla</button>
+    </form>
+</body>
+
+</html>
+************************************************************
+<!DOCTYPE html> //fieldset: gruplamak için. legend:grubun baþlýðý olur
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+    <fieldset>
+        <legend>Kiþisel Bilgiler</legend>
+        Ad: <input type="text">
+        Soyad: <input type="text">
+    </fieldset> 
+    <fieldset>
+        <legend>Ýletiþim Bilgileri</legend>
+        Eposta: <input type="email">
+        Telefon: <input type="tel">
+    </fieldset>
+    </form>
+</body>
+</html>
+
+**********************************************************
+<!DOCTYPE html> //liste seçimi
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+        <select name="ulke">
+            <option value=""> Seçiniz:</option>
+            <option value="90">Türkiye</option>
+            <option value="91">Almanya</option>
+            <option value="92">Fransa</option>
+
+        </select>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
+**************************************************************
+<!DOCTYPE html> // iki seçenek ayný anda seçilebilir.
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <form method="get">
+       Cinsiyet: <input type="radio" name="cinsiyet" value="1" id="erkek"> 
+       <label for="erkek">erkek</label>
+       <input type="radio" name="cinsiyet" value="2" id="kadýn"> 
+       <label for="kadýn">kadýn</label>
+        <button type="submit">Gönder </button> 
+    </form>
+</body>
+
+</html>
