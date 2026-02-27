@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div>Div</div>
+    <p>Pargaraf</p>
+    <span>Span</span> <i>Ýtalik</i>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div>Div</div>
+    <p>Pargaraf</p>
+    <span>Span</span> <i style="display: block">Ýtalik</i>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div>Div</div>
+    <p style="display:none;">Pargaraf</p> //display none ile p etiketi görünmez yapýldý
+    <span>Span</span> <i style="display: block">Ýtalik</i>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #tablo {
+            display: table;
+        }
+
+        .satir {
+            display: table-row;
+        }
+
+        .hucre {
+            display: table-cell;
+            border: 1px solid coral;
+            padding: 5px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tablo">
+        <div class="satir">
+            <div class="" hucre>hucre1</div>
+            <div class="" hucre>hucre2</div>
+            <div class="" hucre>hucre3</div>
+
+        </div class="satir">
+        <div class="" hucre>hucre1</div>
+        <div class="" hucre>hucre2</div>
+        <div class="" hucre>hucre3</div>
+        </div>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div{
+            background-color: aqua;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Bölüm
+    </div>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div{
+            background-color: aqua;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Bölüm
+    </div>
+    <div style="max-width: 50%;">
+        Bölüm 2
+    </div>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #div1{
+            background-color: aqua;     
+        }
+        #div2{
+            background-color: brown;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+ <div id="div1">Div1</div>
+ <div id="div2">Div2</div>
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #div1{
+            background-color: aqua;
+            width: 300px;
+            margin:auto;
+        }
+        #div2{
+            background-color: brown;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+ <div id="div1">Div1</div>
+ <div id="div2">Div2</div>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #div1{
+            background-color: aqua;
+            width: 300px;
+            margin:auto;
+        }
+        #div2{
+            background-color: brown;
+            margin-top: 20px;
+        }
+        #div3{
+            background-color: blueviolet;
+            width:100px ;
+            margin:auto
+        }
+    </style>
+</head>
+
+<body>
+ <div id="div1">Div1
+     <div id="div3">Div3</div>
+ </div>
+ <div id="div2">Div2</div>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+     #kutu2{
+         position: relative;
+         top:5px;
+         left:5px
+     }   
+        
+    </style>
+</head>
+
+<body>
+<div>Div1</div>
+<div id="kutu2">Div2</div>
+<div>Div3</div>
+</body>
+
+</html>
+
+//class seçici . konur
+//iki yerde kullandýðýmýz için class kullandýk
+//tek yerde id 
+//top ve bottom ayný anda verilmez
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .div1 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+
+        .mutlak {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: aqua;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">Div1
+        <div class="mutlak">Mutlak 1</div>
+    </div>
+    <div class="mutlak">Mutlak 2</div>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+      .sabit{
+          position: fixed; //kaydýrma çubuðu hareket ettiðinde durmasýný istiyorsak kullanýyoruz
+          right: 0;
+          top: 0;
+          width: 100;
+          height: 100;
+          background-color: aqua;
+      }
+    </style>
+</head>
+
+<body>
+   <div class="sabit">Sabit</div>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+      .div1{
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 100px;
+          height: 100px;
+          background-color: aqua;
+      }
+      .div2{
+          position: absolute;
+          left: 0;
+          top: 20;
+          width: 100px;
+          height: 100px;
+          background-color:rgb(255, 251, 0) ;
+          z-index:1; //etiketlerin hangisi altta üstte olduðunu gösteriyor
+    </style>
+</head>
+
+<body>
+   <div class="div1">Div1</div>
+   <div class="div2">Div2</div>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+      .div1{
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 100px;
+          height: 100px;
+          background-color: aqua;
+          z-index: 2;
+      }
+      .div2{
+          position: absolute;
+          left: 20px;
+          top: 20px;
+          width: 100px;
+          height: 100px;
+          background-color:rgb(255, 251, 0) ;
+          z-index:1; //etiketlerin hangisi altta üstte olduðunu gösteriyor
+    </style>
+</head>
+
+<body>
+   <div class="div1">Div1</div>
+   <div class="div2">Div2</div>
+</body>
+
+</html>
