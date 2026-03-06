@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+    echo 'Merhaba Dünya!';
+    ?>
+</body>
+</html>
+
+****************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$metin = "Merhaba";
+$x = 12;
+$y = 3.14;
+    ?>
+</body>
+</html>
+*******************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$metin = "Merhaba";
+echo $metin;
+    ?>
+</body>
+</html>
+**********************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x=10;
+$y=20;
+echo $x+$y;
+    ?>
+</body>
+</html>
+**********************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x=10;
+function deneme(){
+    echo $x; fonksiyon dışında tanımlanmış ama fonkisyon içinden ulaşılmaya çalışıldığından yanlış
+}
+    ?>
+</body>
+</html>
+******************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x=10;
+function deneme(){
+   global $x;
+   echo $x;
+}
+deneme();
+    ?>
+</body>
+</html>
+***************************************************
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x=10;
+function deneme(){
+$y=20;
+}
+deneme();
+echo $y; yerel değişkene küresel alandan erişilemez
+    ?>
+</body>
+</html>
+************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x=10;
+function deneme(){
+  echo $GLOBALS['x'];
+}
+deneme();
+
+    ?>
+</body>
+</html>
+
+*********************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$metin = "Merhaba ybs";
+print($metin);
+    ?>
+</body>
+</html>
+**************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x=3.14;
+var_dump($x); //değişkenle ilgili detaylı bilgi verir
+    ?>
+</body>
+</html>
+***********************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x=true;
+$y=false;
+var_dump($x)
+    ?>
+</body>
+</html>
+************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$araba = array("Mercedes", "BMW","Volvo");
+var_dump($araba);
+
+    ?>
+</body>
+</html>
+*****************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x;
+var_dump($x);
+
+    ?>
+</body>
+</html>
+*********************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x=null;
+var_dump($x);
+
+    ?>
+</body>
+</html>
+*****************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+define("MERHABA","Merhaba YBS") //büyük yazılır
+echo MERHABA; //sabitlerde dolar işareti konulmaz.
+    ?>
+</body>
+</html>
+********************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo strlen("Merhaba Dünya !");
+    ?>
+</body>
+</html>
+******************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo str_word_count("Merhaba Dünya") //kaç kelime olduğunu bulur
+    ?>
+</body>
+</html>
+****************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo strrev("Selam");  //tersten yazılır
+    ?>
+</body>
+</html>
+*************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo strpos("Merhaba Dunya!","Dunya"); //bir metinde başka bir metin buluyoruz. konumdan bulundu
+    ?>
+</body>
+</html>
+
+*****************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo strrpos("Merhaba Dünya","a");
+    ?>
+</body>
+</html>
+***********************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo strpos("Merhaba Dünya","a");
+    ?>
+</body>
+</html>
+***************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo strtoupper("merhaba dunya");
+    ?>
+</body>
+</html>
+*****************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo strtolower("MERHABA DUNYA");
+    ?>
+</body>
+</html>
+*************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo str_replace("Dunya","Çocuk","Merhaba Dunya")
+    ?>
+</body>
+</html>
+*************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+ echo $x=" Rüzgar ";
+ echo '<br>';
+echo trim($x);
+    ?>
+</body>
+</html>
+********************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+ $x= "Merhaba Dunya";
+ $dizi = explode (" ", $x);
+ var_dump($dizi);
+ ?>
+</body>
+</html>
+*********************************
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+ $x= "Merhaba Dunya";
+ $dizi = explode (" ", $x);
+ echo $dizi[0]; //0.indis  yazılır
+ ?>
+</body>
+</html>
+****************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+ $ad ="Rüzgar";
+ $soyad ="Şahin";
+ echo $ad. " ".$soyad; //iki değişkeni birleştirdik
+ ?>
+</body>
+</html>
+************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+$x="Merhaba Dunya";
+echo substr($x,8,5); //dunya kelimesini döndürdü. başla-bitiş aralıkları verildi.
+ ?>
+</body>
+</html>
+
+************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo str_repeat(" selam ",10);
+ ?>
+</body>
+</html>
+****************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+echo "Merhaba \"Rüzgar\"";
+ ?>
+</body>
+</html>
+******************************************
+$ değişken olarak algılamaması için başına \ konur.
+********************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+function aciklamaKisalt($aciklama,$karaktersayisi=50){
+    if(strlen($aciklama)<50){
+        return $aciklama;
+    }
+    $kisalt =substr(aciklama,0,50);
+    $sonBosluk = strrpos($kisalt,0,$sonBosluk);
+    return substr($kisalt,0,$sonBlosluk). "...";
+
+}
+echo $metin= "Bir ürün kataloğunda, uzun ürün açıklamalarını belli bir karakter sayısından sonra kesip";
+echo '<br>';
+echo aciklamaKisalt($metin,50);
+ ?>
+</body>
+</html>
+*******************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <?php
+function epostaGizle($ePosta){
+    $sonuc = explode("@",$ePosta);
+    $ilkKisim =substr($sonuc[0],0,3);
+    $yildizli = str_repeat("*", strlen($sonuc[0])-3);
+    return $ilkKisim . $yildizli . "@" . $sonuc[1];
+  
+}
+epostaGizle("zihnikaya@aydin.edu.tr");
+ ?>
+</body>
+</html>
+****************************************************
