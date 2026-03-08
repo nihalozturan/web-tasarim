@@ -1,5 +1,5 @@
-//post yazılırsa biligler gizli, get yazılırsa açık.
-//submit ile buton yapıldı
+//post yazÃ½lÃ½rsa biligler gizli, get yazÃ½lÃ½rsa aÃ§Ã½k.
+//submit ile buton yapÃ½ldÃ½
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,7 +10,7 @@
   <form action="giris.html" method="get"> 
    Ad: <input type="text" name="ad">
    Soyad: <input type="text" name="soyad">
-   <input type="submit" value="Gönder"> 
+   <input type="submit" value="GÃ¶nder"> 
   </form>  
 </body>
 </html>
@@ -18,7 +18,7 @@
 
 ************************************************************************************
 
-<!DOCTYPE html> //required ile alanı doldurma mecburyeti getirildi. maxlength ile karakter kısıtı getirildi.
+<!DOCTYPE html> //required ile alanÃ½ doldurma mecburyeti getirildi. maxlength ile karakter kÃ½sÃ½tÃ½ getirildi.
 <html lang="en">
 
 <head>
@@ -29,7 +29,7 @@
     <form action="giris.html" method="get">
         Ad: <input type="text" name="ad" required maxlength="5"> 
         Soyad: <input type="text" name="soyad">
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -39,7 +39,7 @@
 *****************************************************************************
 
 
-<!DOCTYPE html> //placeholder ile kutucuğa açıklama eklendi
+<!DOCTYPE html> //placeholder ile kutucuÃ°a aÃ§Ã½klama eklendi
 <html lang="en">
 
 <head>
@@ -48,9 +48,9 @@
 
 <body>
     <form action="giris.html" method="get">
-        Ad: <input type="text" name="ad" placeholder="adınızı giriniz"> 
+        Ad: <input type="text" name="ad" placeholder="adÃ½nÃ½zÃ½ giriniz"> 
         Soyad: <input type="text" name="soyad">
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -71,7 +71,7 @@
     <form action="giris.html" method="get">
         Ad: <input type="text" name="ad" readonly> 
         Soyad: <input type="text" name="soyad">
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -80,7 +80,7 @@
 
 ***********************************************************************
 
-<!DOCTYPE html> //ad kutucuğu 'Rüzgar' yazısı ile gelir. İnput girilemez.
+<!DOCTYPE html> //ad kutucuÃ°u 'RÃ¼zgar' yazÃ½sÃ½ ile gelir. Ãnput girilemez.
 <html lang="en">
 
 <head>
@@ -89,9 +89,9 @@
 
 <body>
     <form action="giris.html" method="get">
-        Ad: <input type="text" name="ad" readonly value="rüzgar">
+        Ad: <input type="text" name="ad" readonly value="rÃ¼zgar">
         Soyad: <input type="text" name="soyad">
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -110,7 +110,7 @@
     <form action="giris.html" method="get">
         Ad: <input type="text" name="ad" size="50"> 
         Soyad: <input type="text" name="soyad">
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -120,7 +120,7 @@
 
 *************************************************************************
 
-<!DOCTYPE html>  //sifre tanımlama
+<!DOCTYPE html>  //sifre tanÃ½mlama
 <html lang="en">
 
 <head>
@@ -129,9 +129,9 @@
 
 <body>
     <form action="giris.html" method="post">
-       Şifre: <input type="password" name="sifre">
+       Ãifre: <input type="password" name="sifre">
        <br>
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -141,7 +141,7 @@
 
 ***********************************************************************
 
-<!DOCTYPE html> //eposta olarak tanımladık @ olmadan ilerlenmiyor
+<!DOCTYPE html> //eposta olarak tanÃ½mladÃ½k @ olmadan ilerlenmiyor
 <html lang="en">
 
 <head>
@@ -152,7 +152,7 @@
     <form action="giris.html" method="post">
       ePosta: <input type="email" name="eposta"> 
        <br>
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -163,7 +163,7 @@
 
 
 ***************************************************************
-<!DOCTYPE html> //checkbox oluşturma
+<!DOCTYPE html> //checkbox oluÃ¾turma
 <html lang="en">
 
 <head>
@@ -176,7 +176,7 @@
    <input type="checkbox"name="arac2"> Skoter
    <input type="checkbox"name="arac3"> Taksi
        <br>
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -185,7 +185,7 @@
 
 
 ****************************************************************
-<!DOCTYPE html> // required: seçmeden ilerleyemiyorsun // checked:seçili gelir
+<!DOCTYPE html> // required: seÃ§meden ilerleyemiyorsun // checked:seÃ§ili gelir
 <html lang="en">
 
 <head>
@@ -198,7 +198,7 @@
    <input type="checkbox"name="arac2" checked> Skoter 
    <input type="checkbox"name="arac3"> Taksi
        <br>
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
@@ -208,7 +208,7 @@
 
 ***************************************************************
 
-<!DOCTYPE html> //radio düğmeleri ile seçim
+<!DOCTYPE html> //radio dÃ¼Ã°meleri ile seÃ§im
 <html lang="en">
 
 <head>
@@ -219,15 +219,15 @@
     <form action="giris.html" method="get">  
         Cinsiyetiniz:
         <input type="radio" name="cinsiyet" value="erkek"> erkek
-        <input type="radio" name="cinsiyet" value="kadın"> kadın
+        <input type="radio" name="cinsiyet" value="kadÃ½n"> kadÃ½n
         <br>
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
 </html>
 *******************************************************************
-<!DOCTYPE html> // formaction:form verilerini sunucuya gönderir
+<!DOCTYPE html> // formaction:form verilerini sunucuya gÃ¶nderir
 <html lang="en">
 
 <head>
@@ -238,9 +238,9 @@
     <form method="get">
         Cinsiyetiniz:
         <input type="radio" name="cinsiyet" value="erkek"> erkek
-        <input type="radio" name="cinsiyet" value="kadın"> kadın
+        <input type="radio" name="cinsiyet" value="kadÃ½n"> kadÃ½n
         <br>
-        <input type="submit" value="Gönder" formaction="giris.html"> 
+        <input type="submit" value="GÃ¶nder" formaction="giris.html"> 
     </form>
 </body>
 
@@ -248,7 +248,7 @@
 
 *******************************************************************
 
-<!DOCTYPE html> //resim ile yönlendirildi, boyut ayarı yapıldı
+<!DOCTYPE html> //resim ile yÃ¶nlendirildi, boyut ayarÃ½ yapÃ½ldÃ½
 <html lang="en">
 
 <head>
@@ -259,7 +259,7 @@
     <form method="get">
         Cinsiyetiniz:
         <input type="radio" name="cinsiyet" value="erkek"> erkek
-        <input type="radio" name="cinsiyet" value="kadın"> kadın
+        <input type="radio" name="cinsiyet" value="kadÃ½n"> kadÃ½n
         <br>
         <input type="image" src="img_submit.gif" width="30" height="30"> 
     </form>
@@ -267,7 +267,7 @@
 
 </html>
 **************************************************************
-<!DOCTYPE html> //sıfırla etiketi
+<!DOCTYPE html> //sÃ½fÃ½rla etiketi
 <html lang="en">
 
 <head>
@@ -276,16 +276,16 @@
 
 <body>
     <form method="get">
-      Kullanıcı adı: <input type="text"> <br>
-      Şifre: <input type="password"> <br>
-      <input type="submit" value="Gönder">
-      <input type="reset" value="Sıfırla"> 
+      KullanÃ½cÃ½ adÃ½: <input type="text"> <br>
+      Ãifre: <input type="password"> <br>
+      <input type="submit" value="GÃ¶nder">
+      <input type="reset" value="SÃ½fÃ½rla"> 
     </form>
 </body>
 
 </html>
 *****************************************************************
-<!DOCTYPE html> //Telefon alanı oluşturma
+<!DOCTYPE html> //Telefon alanÃ½ oluÃ¾turma
 <html lang="en">
 
 <head>
@@ -295,8 +295,8 @@
 <body>
     <form method="get">
       Telefon: <input type="Tel" name="Telefon" placeholder="05XX XXX XX XX"> <br>
-      <input type="submit" value="Gönder">
-      <input type="reset" value="Sıfırla">
+      <input type="submit" value="GÃ¶nder">
+      <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
@@ -305,7 +305,7 @@
 ******************************************************
 
 
-<!DOCTYPE html> //tarih seçimi
+<!DOCTYPE html> //tarih seÃ§imi
 <html lang="en">
 
 <head>
@@ -314,16 +314,16 @@
 
 <body>
     <form method="get">
-    Doğum Tarihiniz: <input type="date" name=" tarih">
-      <input type="submit" value="Gönder">
-      <input type="reset" value="Sıfırla">
+    DoÃ°um Tarihiniz: <input type="date" name=" tarih">
+      <input type="submit" value="GÃ¶nder">
+      <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
 </html>
 
 *********************************************************
-<!DOCTYPE html> //yıl aralığına göre tarih seçimi
+<!DOCTYPE html> //yÃ½l aralÃ½Ã°Ã½na gÃ¶re tarih seÃ§imi
 <html lang="en">
 
 <head>
@@ -332,9 +332,9 @@
 
 <body>
     <form method="get">
-    Doğum Tarihiniz: <input type="date" name=" tarih" min="2000-01-01" max="2010-01-01">
-      <input type="submit" value="Gönder">
-      <input type="reset" value="Sıfırla">
+    DoÃ°um Tarihiniz: <input type="date" name=" tarih" min="2000-01-01" max="2010-01-01">
+      <input type="submit" value="GÃ¶nder">
+      <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
@@ -342,7 +342,7 @@
 
 *******************************************************
 
-<!DOCTYPE html>  //göndere tıklandığında pop up mesajı verir.
+<!DOCTYPE html>  //gÃ¶ndere tÃ½klandÃ½Ã°Ã½nda pop up mesajÃ½ verir.
 <html lang="en">
 
 <head>
@@ -351,9 +351,9 @@
 
 <body>
     <form method="get">
-    Doğum Tarihiniz: <input type="date" name=" tarih" min="2000-01-01" max="2010-01-01">
-      <input type="submit" value="Gönder" onclick= "alert('Merhaba')">
-      <input type="reset" value="Sıfırla">
+    DoÃ°um Tarihiniz: <input type="date" name=" tarih" min="2000-01-01" max="2010-01-01">
+      <input type="submit" value="GÃ¶nder" onclick= "alert('Merhaba')">
+      <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
@@ -370,10 +370,10 @@
 
 <body>
     <form method="get">
-        Resim yükleyiniz: <input type="file">
+        Resim yÃ¼kleyiniz: <input type="file">
         <br>
-        <input type="submit" value="Gönder">
-        <input type="reset" value="Sıfırla">
+        <input type="submit" value="GÃ¶nder">
+        <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
@@ -387,11 +387,11 @@
 
 <body>
     <form method="get">
-      Tuttuğunuz Takım: <input type="text"><br>
-<input type="hidden" name="ulke" value="Türkiye">
+      TuttuÃ°unuz TakÃ½m: <input type="text"><br>
+<input type="hidden" name="ulke" value="TÃ¼rkiye">
 <br>
-        <input type="submit" value="Gönder">
-        <input type="reset" value="Sıfırla">
+        <input type="submit" value="GÃ¶nder">
+        <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
@@ -409,10 +409,10 @@
 
 <body>
     <form method="get">
- Renk seçiniz: <input type="color" name="renk">
+ Renk seÃ§iniz: <input type="color" name="renk">
  <br>
-        <input type="submit" value="Gönder">
-        <input type="reset" value="Sıfırla">
+        <input type="submit" value="GÃ¶nder">
+        <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
@@ -427,10 +427,10 @@
 
 <body>
     <form method="get">
-Sayı Seçiniz: <input type="number" name="sayı">
+SayÃ½ SeÃ§iniz: <input type="number" name="sayÃ½">
  <br>
-        <input type="submit" value="Gönder">
-        <input type="reset" value="Sıfırla">
+        <input type="submit" value="GÃ¶nder">
+        <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
@@ -446,10 +446,10 @@ Sayı Seçiniz: <input type="number" name="sayı">
 
 <body>
     <form method="get">
-Sayı Seçiniz: <input type="number" name="sayı" min="10" max="20" step="2">
+SayÃ½ SeÃ§iniz: <input type="number" name="sayÃ½" min="10" max="20" step="2">
  <br>
-        <input type="submit" value="Gönder">
-        <input type="reset" value="Sıfırla">
+        <input type="submit" value="GÃ¶nder">
+        <input type="reset" value="SÃ½fÃ½rla">
     </form>
 </body>
 
@@ -466,16 +466,16 @@ Sayı Seçiniz: <input type="number" name="sayı" min="10" max="20" step="2">
 
 <body>
     <form method="get">
-        Sayı Seçiniz: <input type="number" name="sayı" min="10" max="20" step="2">
+        SayÃ½ SeÃ§iniz: <input type="number" name="sayÃ½" min="10" max="20" step="2">
         <br>
-        <button type="submit">Gönder</button>
-        <button type="reset"> Sıfırla</button>
+        <button type="submit">GÃ¶nder</button>
+        <button type="reset"> SÃ½fÃ½rla</button>
     </form>
 </body>
 
 </html>
 ************************************************************
-<!DOCTYPE html> //fieldset: gruplamak için. legend:grubun başlığı olur
+<!DOCTYPE html> //fieldset: gruplamak iÃ§in. legend:grubun baÃ¾lÃ½Ã°Ã½ olur
 <html lang="en">
 
 <head>
@@ -485,12 +485,12 @@ Sayı Seçiniz: <input type="number" name="sayı" min="10" max="20" step="2">
 <body>
     <form method="get">
     <fieldset>
-        <legend>Kişisel Bilgiler</legend>
+        <legend>KiÃ¾isel Bilgiler</legend>
         Ad: <input type="text">
         Soyad: <input type="text">
     </fieldset> 
     <fieldset>
-        <legend>İletişim Bilgileri</legend>
+        <legend>ÃletiÃ¾im Bilgileri</legend>
         Eposta: <input type="email">
         Telefon: <input type="tel">
     </fieldset>
@@ -499,7 +499,7 @@ Sayı Seçiniz: <input type="number" name="sayı" min="10" max="20" step="2">
 </html>
 
 **********************************************************
-<!DOCTYPE html> //liste seçimi
+<!DOCTYPE html> //liste seÃ§imi
 <html lang="en">
 
 <head>
@@ -509,19 +509,19 @@ Sayı Seçiniz: <input type="number" name="sayı" min="10" max="20" step="2">
 <body>
     <form method="get">
         <select name="ulke">
-            <option value=""> Seçiniz:</option>
-            <option value="90">Türkiye</option>
+            <option value=""> SeÃ§iniz:</option>
+            <option value="90">TÃ¼rkiye</option>
             <option value="91">Almanya</option>
             <option value="92">Fransa</option>
 
         </select>
-        <input type="submit" value="Gönder">
+        <input type="submit" value="GÃ¶nder">
     </form>
 </body>
 
 </html>
 **************************************************************
-<!DOCTYPE html> // iki seçenek aynı anda seçilebilir.
+<!DOCTYPE html> // iki seÃ§enek aynÃ½ anda seÃ§ilebilir.
 <html lang="en">
 
 <head>
@@ -532,9 +532,9 @@ Sayı Seçiniz: <input type="number" name="sayı" min="10" max="20" step="2">
     <form method="get">
        Cinsiyet: <input type="radio" name="cinsiyet" value="1" id="erkek"> 
        <label for="erkek">erkek</label>
-       <input type="radio" name="cinsiyet" value="2" id="kadın"> 
-       <label for="kadın">kadın</label>
-        <button type="submit">Gönder </button> 
+       <input type="radio" name="cinsiyet" value="2" id="kadÃ½n"> 
+       <label for="kadÃ½n">kadÃ½n</label>
+        <button type="submit">GÃ¶nder </button> 
     </form>
 </body>
 
