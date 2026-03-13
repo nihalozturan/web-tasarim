@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<form method ="post">
+1.sayi : <input type="number"name="sayi1"> <br>
+2.sayi : <input type="number" name="sayi2" ><br>
+<select name= "işlem">
+    <option value= "">Seçiniz</option>
+    <option value= "1">Topla</option>
+    <option value= "2">Çıkart</option>
+    <option value= "3">Çarp</option>
+    <option value= "4">Böl</option>
+    <option value= "5">Kalan</option>
+</select> <br>
+<button type= "submit"> Hesapla</button>
+</form>
+<div>
+    <h3>İşlem Sonucu</h3>
+    <?php
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        $sayi1 = $_POST ["sayi1"];
+        $sayi2 = $_POST ["sayi2"];
+        $islem = $_POST ["islem"];
+        if($islem ==1){
+        echo $sayi1+$sayi2;
+    }
+        elseif($islem ==2)
+        echo $sayi1-$sayi2;     
+    }
+        elseif($islem ==3){
+         echo $sayi1*$sayi2;
+    }
+        elseif($islem ==4){
+        echo $sayi1/$sayi2;
+    }
+    
+        elseif($islem==5){
+        echo $sayi1 % $sayi2;
+    }
+        }
+    ?>
+</div>
+</body>
+</html>
