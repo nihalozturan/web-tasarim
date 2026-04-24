@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+<?php
+$dosya = fopen("sozluk.txt","r") or die("Dosya açılamadı");
+echo fread($dosya, filesize("sozluk.txt"));
+?>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+<?php
+$dosya = fopen("sozluk.txt","r") or die("Dosya açılamadı"); //dosya sonunda mıyız değilsek 1 satır oku yazdır ta ki dosya sonuna gelene kadar.
+while (!feof($dosya)){
+    echo nl2br(fgets($dosya));
+}
+fclose($dosya);
+?>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+<?php
+$dosya = fopen("sozluk.txt","r") or die("Dosya açılamadı"); 
+while (!feof($dosya)){
+    echo fgetc($dosya); //karakter okuma
+}
+fclose($dosya);
+?>
+
+</body>
+</html>
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+<?php
+$dosya = fopen("yeni_dosya.txt","w");
+fwrite($dosya,"Nehir Çelik\n");
+?>
+
+</body>
+</html>
+
+
+
+  <?php
+$cerezAdi = "kulllanici";
+$cerezDegeri = "zkaya";
+setcookie($cerezAdi, $cerezDegeri, time()+(24*60*60));
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+</head>
+<body>
+<?php
+if(isset($_COOKIE["kullanici"])){
+    echo $_COOKIE{"kullanici"};
+
+}else{
+    echo "Çerez gönderilmemiş";
+}
+?>
+
+</body>
+</html>
+
+
+      <?php
+$cerezAdi = "kulllanici";
+$cerezDegeri = "zkaya";
+setcookie($cerezAdi, $cerezDegeri, time()-(24*60*60));
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+</head>
+<body>
+<?php
+if(isset($_COOKIE["kullanici"])){
+    echo $_COOKIE{"kullanici"};
+
+}else{
+    echo "Çerez gönderilmemiş";
+}
+?>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+</head>
+<body>
+<form method ="post" action="merhaba.php">
+Kullanici Adı: <input type="text" name ="kullanici"
+value = "<?php echo (isset ($_COOKIE["kullanici"])? $_COOKIE["kullanici"]:"");
+Beni hatırla: <input type="checkbox" name="hatirla" value = "1"><br>
+<button type = "submit">Gönder</button>
+</form>
+</body>
+</html>
+
+
+      <?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    if(isset($_POST["hatirla"])){
+        setcookie("kullanici",$_POST['kullanici'],time()+3600);
+    }else{
+        setcookie("kullanici",$_POST['kullanici'],time()-3600);
+    }
+
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href ="hafta12.php">Anasayfa </a>
+</body>
+</html>
+
+
+
+
+<?php
+session_start()
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $_SESSION["renk"] = "Mavi";
+    ?>
+    <a href ="oturum1.php">Oturum 2 </a>
+</body>
+</html>
+
+
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    echo "Renginiz:" . $_SESSION["renk"];
+    ?>
+</body>
+</html>
