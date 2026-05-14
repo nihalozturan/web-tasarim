@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<?php
+function bolme($bolunen, $bolen){
+return $bolunen / $bolen;
+}
+echo bolme(20,0);
+    ?>
+
+</body>
+</html>
+// hatalıdır bu
+
+*******************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<?php
+function bolme($bolunen, $bolen){
+    if (bolen==0)
+        throw new Exception("Sıfıra bölme hatası");
+    
+    return $bolunen / $bolen;
+}
+try{
+    echo bolme(20,0);
+    echo "İstisna sonrası kodlar";
+}catch(Exception $ex){
+    echo $ex->getMessage();
+}
+echo " <br>Program devam eder";
+    ?>
+
+</body>
+</html>
+**************************
+
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<?php
+try{
+    $conn = new PDO("mysql:host=localhost","root","");
+    $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    echo "Veritabanına başarıyla bağlanıldı.";
+}catch (PDOException $ex){
+    echo $ex->getMessage();
+}
+    ?>
+
+</body>
+</html>
+
+
+****************************************************************************
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<?php
+try{
+    $conn = new PDO("mysql:host=localhost;dbname=ogrenci","root","");
+    $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $sql = "INSERT INTO uyelik(ad,soyad,email,kullanici)
+             VALUES          ('Ali','Kaya','alikaya@gmail.com','alikaya')";
+                               
+    $conn->exec($sql);
+    echo "Kayıt başarıyla eklendi.";
+
+}catch (PDOException $ex){
+    echo $ex->getMessage();
+}
+    ?>
+
+</body>
+</html>
+
+  
